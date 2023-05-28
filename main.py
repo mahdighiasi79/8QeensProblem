@@ -1,5 +1,4 @@
 import copy
-
 import numpy as np
 import random
 
@@ -94,8 +93,7 @@ def MinConflicts(max_steps):
 
 
 if __name__ == '__main__':
-    eight_queens = MinConflicts(1000)
-    if eight_queens is None:
-        print("failure")
-    else:
-        print(eight_queens)
+    eight_queens = None
+    while eight_queens is None:
+        eight_queens = MinConflicts(100)
+    print(eight_queens)
